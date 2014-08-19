@@ -1,0 +1,34 @@
+Um von einem bestimmten klassischen Zustand $a$ am Zeitpunkt $t_i$ zu
+einem anderen klassischen Zustand $b$ zum Zeitpunkt $t_f > t_i$ zu
+gelangen, muss ein System eine Menge anderer Zustände in zeitlicher
+Abfolge durchlaufen, die eine sogenannte Trajektorie $\phi(t)$
+bilden. Typischerweise existieren jedoch viele verschiedene
+Trajektorien für einen bestimmten Übergang: Der Übergang eines
+Fußballes von der Hand des Schiedsrichters ins Tornetz kann
+beispielsweise auf viele verschiedene Weisen erfolgen. In der
+klassischen Physik wird davon augegangen, dass von diesen Pfaden nur
+ein einziger realisiert wird. Der von einem System realisierte Pfad
+ist dabei stets einer, welcher die \textit{Wirkung} $S(\phi)$ extremal
+werden lässt. 
+\begin{align}
+  S\left(\phi\right) &= \int_{\mathbb{R}^n} \Ell\left(\phi\left(x\right),\del \phi\left(x\right) \right) d^nx
+\end{align}
+
+In der QM lässt sich der gleiche Mechanismus verwenden, jedoch kann
+hier nicht die Rede davon sein, dass nur ein bestimmter Pfad
+realisiert wird -- stattdessen befindet sich das unbeobachtete System
+in der Zwischenzeit $t_i < t < t_f$ in einer Überlagerung aller in
+Frage kommenden Zustände. Mathematisch ist dies zum Zeitpunkt $t$ eine
+Linearkombination der Zustände aller in Frage kommenden Pfade. Als
+Koeffizienten werden hierbei die Wirkungen der einzelnen Pfade
+verwendet. Falls die Menge der in Frage kommenden Pfade $\phi$  jedoch
+überabzählbar ist, lässt sich diese Linearkombination und insbesondere
+ein Maß \glqq$D\phi$\grqq{} auf dem Raum, in dem sie leben, nicht mehr rigoros
+definieren. Im Prinzip jedoch wäre beispielsweise die
+Wahrscheinlichkeit eines Übergangs $\phi_i\to\phi_f$ berechenbar über
+\begin{align*}
+ \bra{\phi_f=\phi(t_f)}
+   \widehat{U}\left(t_i,t_f\right)
+ \ket{\phi_i=\phi(t_i)}
+  &= \int_{\phi} S\left(\phi\right) \glqq D\phi\grqq{}
+\end{align*}

@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{mdframed}
+\usepackage{amsmath,amssymb,mathrsfs}
+
+\newmdenv[
+  topline=false,
+  bottomline=false,
+  skipabove=\topsep,
+  skipbelow=\topsep
+]{siderule}
+
+
+\newcommand{\ket}[1]{\left\vert #1\right>}
+\newcommand{\bra}[1]{\left< #1\right\vert}
+\def\Ell{\ensuremath{\mathscr{L}}}
+\let\del\partial
+
+\title{ETQFTs}
+
+\author{Carsten Burgard}
+
+\begin{document}
+
+%% Outline
+%% 
+%% Einleitung
+\input{parts/intro}
+%% Raumzeit, Feld, Quantengravitation (!)
+\begin{siderule}
+\input{parts/physik-grundlagen}
+\end{siderule}
+%% Mannigfaltigkeiten, Kobordismen
+%% Pfadintegral, Wirkung (!)
+\begin{siderule}
+\input{parts/pfadintegral}
+\end{siderule}
+%% 1-Kategorien
+%% TQFTs
+%% Klassifkikation von 1-TQFTs (2-TQFTs)
+%% Zerschneiden, Lokalität, Zustandssummen (!)
+\begin{siderule}
+\input{parts/zsm}
+\end{siderule}
+%% Höhere Kategorien
+%% ETQFTs
+
+
+\end{document}
