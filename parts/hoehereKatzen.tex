@@ -1,2 +1,33 @@
-blabla 
-test
+\begin{Def}
+Eine \emph{Bikategorie} $\mathfrak C$ besteht aus:
+\begin{itemize}
+\item einer Klasse von Objekten $\mathrm{ob}(\mathfrak C)$,
+\item f"ur je zwei Objekte $X$ und $Y$ von $\mathfrak C$ einer ($1$-)Kategorie $\mathfrak{C}(X,Y)$ von Pfeilen,
+\item einer Komposition, d.h.\ einem Funktor \[-\circ-\colon \mathfrak{C}(X,Y)\times \mathfrak{C}(Y,Z)\longrightarrow\mathfrak{C}(X,Z)\]
+f"ur je drei Objekte $X$, $Y$ und $Z$ von $\mathfrak C$ und
+\item f"ur jedes Objekt $X$ von $\mathfrak C$ aus einem Identit"atspfeil $1_X\in \mathrm{ob}\mathfrak C(X,X)$.% Wir fassen $1_X$ als einen Funktor $\star\to\mathfrak C(X,X)$ auf, wobei $\star$ die diskrete Kategorie mit einem Objekt ist.
+\end{itemize}
+Wir fordern die "ublichen Axiome (Unitarit"at $-\circ 1\cong \mathrm{id}$, $1\circ -\cong \mathrm{id}$ und Assoziativit"at $(-\circ-)\circ-\cong -\circ(-\circ-)$), allerdings nur bis auf nat"urlichen Isomorphisums. Diese Isomorphismen sollen selbst wieder gewisse Koh"arenzbedingungen erf"ullen, die wir hier nicht ausf"uhrlich hinschreiben wollen.
+\end{Def}
+Es gibt nat"urlich auch den Begriff eines Bifunktors zwischen Bikategorien. Es handelt sich dabei um eine Abbildung auf Objekten und einem Funktor auf jeder Pfeilkategorie, die kompatibel sind mit den Assoziativit"ats- und Unitarit"atsisomorphismen. Wir "uberlassen es dem Leser eine detaillierte Definition auszuarbeiten.
+
+\begin{Def}
+Ein \emph{2-Vektorraum} ("uber einem K"orper $k$) $\mathfrak V$ ist eine "uber $\mathrm{Vekt}_k$ angereicherte Kategorie (d.h.\ die Pfeilmengen $\mathfrak V(x,y)$ sind $k$-Vektorr"aume und die Komposition ist bilinear) die folgende Eigenschaften erf"ullt:
+\begin{itemize}
+\item $\mathfrak V$ enth"alt ein $0$-Objekt
+\item in $\mathfrak V$ gibt es bin"are Produkte und Coprodukte und diese stimmen "uberein
+\item $\mathfrak V$ l"asst eine Basis der Objekte zu
+\end{itemize}
+Eine Klasse $B$ von Objekten in $\mathfrak V$ hei\ss t Basis, falls:
+\begin{itemize}
+\item $\mathfrak V(b,c) \cong\begin{cases}
+  k,  & \text{wenn }c=b\\
+  0, & \text{wenn }c\neq b
+\end{cases}$ f"ur $b,c \in B$,
+\item jedes Objekt in $\mathfrak V$ besitzt eine bis auf Permutation eindeutige Darstellung der Form $\bigoplus\limits_{b\in B} b^{\oplus n_b}$, wobei $n_b$ nur f"ur endlich viele $b\in B$ nicht null ist.
+\end{itemize}
+\end{Def}
+
+\begin{Bsp}
+Die Kategorie $\mathrm{Vekt}_k$ ist ein 2-Vektorraum mit Basis $\{k\}$.
+\end{Bsp}
