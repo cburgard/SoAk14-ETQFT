@@ -1,28 +1,32 @@
 
-Nun wollen wir die h\"ohere Kobordismenkategorie $\category{Cob}_{2, 0}$
+% Wenn hier ein Titel stehen soll, kann er
+% \subsection{erweiterte topologische Quantenfeldtheorien}
+% heissen.
+
+Nun wollen wir die höhere Kobordismenkategorie $\category{Cob}_{2, 0}$
 definieren, die als Verallgemeinerung von $\category{Cob}_{1, 0}$ und
-$\category{Cob}_{2, 1}$ der Definitionsbereich von ETQFTs sein soll. Daf\"ur
+$\category{Cob}_{2, 1}$ der Definitionsbereich von ETQFTs sein soll. Dafür
 brauchen wir allerdings noch einen Hilfsbegriff:
 
 \begin{Def}
 Eine $\left<2\right>$-Mannigfaltigkeit $\Sigma$, eine (orientierte)
-"`Mannigfaltigkeit"', die offene Teilmengen von $\mathbb{R}_{\geq 0}^2$ als
+''Mannigfaltigkeit'', die offene Teilmengen von $\mathbb{R}_{\geq 0}^2$ als
 Kartengebiete hat.
 
-F\"ur ein solches $\Sigma$ sei $\del_1 \Sigma$ (bzw.\ $\del_2 \Sigma$) die
+Für ein solches $\Sigma$ sei $\del_1 \Sigma$ (bzw. $\del_2 \Sigma$) die
 Menge aller Punkte, die unter den Kartenabbildungen auf einen Punkt von
-$\mathbb{R}_{\geq 0} \times \{0\}$ (bzw.\ von $\{0\} \times
+$\mathbb{R}_{\geq 0} \times \{0\}$ (bzw. von $\{0\} \times
 \mathbb{R}_{\geq 0}$) abgebildet werden.
 \end{Def}
 
-Wie die Zahl $2$ in dem Namen verr\"at, kann man auch
-$\left<n\right>$-Mannigfaltigkeiten definieren, die in h\"oherdimensonalen
-ETQFTs eine Rolle spielen. Wir werden uns aber zun\"achst auf den
+Wie die Zahl $2$ in dem Namen verrät, kann man auch
+\emph{$\left<n\right>$-Mannigfaltigkeiten} definieren, die in höherdimensonalen
+ETQFTs eine Rolle spielen. Wir werden uns aber zunächst auf den
 zweidimensionalen Fall konzentrieren.
 
 \begin{Def}
 $\category{Cob}_{2, 0}$ ist die symmetrisch monoidale Bikategorie, die durch
-die folgenden Daten (und die dazu passenden nat\"urlichen Abbildungen) gegeben
+die folgenden Daten (und die dazu passenden natürlichen Abbildungen) gegeben
 ist:
 \begin{itemize}
 \item Die Objekte sind (kompakte, orientierte) $0$-Mannigfaltigkeiten.
@@ -32,9 +36,9 @@ Verklebung gegeben.
 \item Die $2$-Morphismen in $\category{Cob}_{2, 0} (X_1, X_2) (M_1, M_2)$ sind
 $\left<2\right>$-Mannigfaltigkeiten mit Isomorphismen $\del_1 \Sigma \cong M_1
 \sqcup \overline{M_2}$ und $\del_2 \Sigma \cong I \times X_1 \sqcup I \times
-\overline{X_2}$. Diese kann man "`entlang einer H\"alfte von $\del_1$"'
-("`vertikal"') oder "`entlang einer H\"alfte von $\del_2$"' ("`horizontal"')
-verkleben, was die h\"oheren Kompositionen liefert.
+\overline{X_2}$. Diese kann man ''entlang einer Hälfte von $\del_1$''
+(''vertikal'') oder ''entlang einer Hälfte von $\del_2$'' (''horizontal'')
+verkleben, was die höheren Kompositionen liefert.
 \item Die monoidale Struktur ist wieder durch die disjunkte Vereinigung
 $\sqcup$ von Mannigfaltigkeiten gegeben.
 \end{itemize}
@@ -46,42 +50,44 @@ ein symmetrisch monoidaler Bifunktor
 \begin{equation}
 Z: \category{Cob}_{2, 0} \to \category{2Vect}_k, \nonumber
 \end{equation}
-d.\,h.\ ein Bifunktor, der "`$\sqcup$ auf $\otimes$ abbildet"' (und
-gewisserma\ss en mit den entsprechenden nat\"urlichen Transformationen dieser
-Operationen vertr\"aglich ist).
+d. h. ein Bifunktor, der ''$\sqcup$ auf $\otimes$ abbildet'' (und
+gewissermaßen mit den entsprechenden natürlichen Transformationen dieser
+Operationen verträglich ist).
 \end{Def}
 
-Da $\emptyset$ bzw.\ $\category{Vect}_k$ "`das neutrale Objekt"' bez\"uglich
-$\sqcup$ bzw.\ $\otimes$ ist, muss f\"ur ein ETQFT $Z(\emptyset) =
-\category{Vect}_k$ gelten. Somit erh\"alt man einen Funktor
+Da $\emptyset$ bzw. $\category{Vect}_k$ ''das neutrale Objekt'' bezüglich
+$\sqcup$ bzw. $\otimes$ ist, muss für ein ETQFT $Z(\emptyset) =
+\category{Vect}_k$ gelten. Somit erhält man einen Funktor
 \begin{equation}
 \category{Cob}_{2, 0} (\emptyset, \emptyset) \to \category{2Vect}_k
 (\category{Vect}_k, \category{Vect}_k). \nonumber
 \end{equation}
 Es ist aber $\category{Cob}_{2, 0} (\emptyset, \emptyset) \simeq
 \category{Cob}_{2, 1}$ (die Objekte sind $1$-Mannigfaltigkeiten ohne Rand,
-die Morphismen entsprechen Kobordismen) bzw.\ $\category{2Vect}_k
-(\category{Vect}_k, \category{Vect}_k) \simeq \category{Vect}_k$  (s.\,o.).
-Also liefert uns jede ETQFT auf diese Weise eine zweidimensionale TQFT.
+die Morphismen entsprechen Kobordismen) bzw. $\category{2Vect}_k
+(\category{Vect}_k, \category{Vect}_k) \simeq \category{Vect}_k$ (s. o.).
+Auf diese Weise liefert uns jede ETQFT eine zweidimensionale TQFT.
 
-Man kann nun in einer (h\"oheren) monoidalen Kategorie $(\mathcal{C},
+% Der Rest kann weggelassen oder radikal abgekuerzt werden.
+
+Man kann nun in einer (höheren) monoidalen Kategorie $(\mathcal{C},
 \boxtimes, I, \ldots)$ von \emph{dualisierbaren Objekten} reden, was im
 eindimensionalen Fall solche Objekte $X$ sind, die zusammen mit einem weiteren
-Objekt $Y$ und Morpismen $e: X \boxtimes Y \to I$ bzw.\ $h: I \to Y \boxtimes
-X$ gegeben sind, die gewisse Axiome erf\"ullen. Zum Beispiel wird eine
+Objekt $Y$ und Morpismen $e: X \boxtimes Y \to I$ bzw. $h: I \to Y \boxtimes
+X$ gegeben sind, die gewisse Axiome erfüllen. Zum Beispiel wird eine
 eindimensionale TQFT $Z: \category{Cob}_{1, 0} \to \category{Vect}_k$ durch die
 Wahl von einem dualisierbaren Objekt $Z(\mathrm{pt}^+)$ in $(\category{Vect}_k,
 \otimes, \ldots)$ eindeutig festgelegt.
 
-In h\"oheren Kategorien kann man noch fordern, dass die in der Definition von
+In höheren Kategorien kann man noch fordern, dass die in der Definition von
 Dualisierbarkeit vorkommenden Morphismen und deren
-"`Dualisierbarkeitsmorphismen"' usw.\  (als Objekte von Morphismenkategorien)
-\"ahnliche Dualisierbarkeitsbedingungen erf\"ullen, was den Begriff der
-\emph{vollst\"andigen Dualisierbarkeit} liefert. Dadurch erh\"alt man die
-folgende Beschreibung von ETQFTs, f\"ur die eine Beweisskizze bereits
+''Dualisierbarkeitsmorphismen'' usw. (als Objekte von Morphismenkategorien)
+ähnliche Dualisierbarkeitsbedingungen erfüllen, was den Begriff der
+\emph{vollständigen Dualisierbarkeit} liefert. Dadurch erhält man die
+folgende Beschreibung von ETQFTs, für die eine Beweisskizze bereits
 existiert:
 
 \begin{Sat}[Kobordismushypothese]
-Eine $(n, 0)$-erweiterte TQFT $Z$ ist durch ein vollst\"andig dualisierbares
+Eine $(n, 0)$-erweiterte TQFT $Z$ ist durch ein vollständig dualisierbares
 Objekt $Z(\mathrm{pt}^+)$ in ihrem Wertebereich eindeutig festgelegt.
 \end{Sat}
