@@ -1,15 +1,47 @@
 
 
 
-Um von erweiterten topologischen Quantenfeldtheorien (ETQFT) reden zu können,
-muss man natürlich zunächst wissen, was topologische Quantenfeldtheorien (TQFT) sind.
+%Um von erweiterten topologischen Quantenfeldtheorien (ETQFT) reden zu können,
+%muss man natürlich zunächst wissen, was topologische Quantenfeldtheorien (TQFT) sind.
 
 In der allgemeinen Relativitätstheorie wird die Raumzeit als Mannigfaltigkeit dargestellt.
-Sei nun $Z(M)$ die Überlagerung der quantenmechanischen Zustände auf der
-$d$-dimensionalen Mannigfaltigkeit $M$.
+Insbesondere ist der Raum zu jeder Zeit als Mannigfaltigkeit darstellbar. Wir betrachten vereinfachend
+den Raum als eindimensionale Mannigfaltigkeit ohne Rand oder noch weiter vereinfachend als Kreis oder (endliche)
+Menge von Kreisen. Die Kreise kann man in einer Ebene als nebeneinanderliegend betrachten. Da sich der Raum in der
+allgemeinen Relativitätstheorie über die Zeit verändern kann, haben wir im Allgemeinen zu verschiedenen Zeitpunkten
+verschiedene Mannigfaltigkeiten die den Raum darstellen. Nun möchte man von der Mannigfaltigkeit $M_1$ zu einem Zeitpunkt
+kontinuierlich zur Mannigfaltigkeit $M_2$ zu einem anderen Zeitpunkt kommen.
+Legt man nun die Ebenen in denen sich $M_1$ und $M_2$ befinden parallel in einen Raum und stellt sich eine Fläche vor die
+komplett zwischen diesen Ebenen liegt und als Ränder genau $M_1$ und $M_2$ hat, so hat man wenn man auf dieser Fläche
+von der einen Ebene zur anderen läuft einen kontinuierlichen Übergang zwischen den beiden Mannigfaltigkeiten gefunden.
+Im einfachsten Fall sind $M_1$ und $M_2$ einzelne Kreise, dann wäre eine solche Übergangsfläche beispielsweise ein Rohr.
+Nach der intuitiven Einführung der 2-dimensionalen Kobordismen die allgemeine Definition:
 
-% Darstellung der TQFTs als Funktoren von der Kategorie der Mannigfaltigkeiten in die Kategorie der C-VR
-% Isomorphismen sind wohl die Diffeomorphismen,was sind aber die nicht-Isomorphismen?
-% TODO
+\begin{Def}
+  Die Kategorie $\category{Cob}(n)$ der $n$-dimensionalen Kobordismen besteht aus:
+  \begin{itemize}
+    \item Ein Objekt von $\category{Cob}(n)$ ist eine geschlossene orientierte $(n-1)$-dimensionale Mannigfaltigkeit.
+    \item Für ein Paar von Objekten $M,N \in \category{Cob}(n)$ ist ein Morphismus von $M$ nach $N$ ein Bordismus:
+    eine orientierte $n$-dimensionale Mannigfaltigkeit mit Rändern $M$ und $N$. Zwei Mannigfaltigkeiten $B$ und $B'$ stellen den gleichen Morhismus dar,
+    falls ein orientierungserhaltender Diffeomorphismus zwischen ihnen existiert, der mit den Rändern verträglich ist.
+    \item Für jedes Objekt $M \in \category{Cob}(n)$ stellt $M \times [0,1]$ die Identität dar.
+    \item Die Komposition von Morphismen ist durch das Verkleben der entsprechenden Bordismen gegeben.
+  \end{itemize}
+\end{Def}
+
+Sei nun $Z(M)$ der Raum der quantenmechanischen Zustände auf der Mannigfaltigkeit $M$ zu einem Zeitpunkt. Zu einem späteren Zeitpunkt, sei $Z(N)$ der entsprechende
+Raum für die Mannigfaltigkeit $N$. Wenn man nun $M$ und $N$ und einen Morphismus in $\category{Cob}(n)$ von $M$ nach $N$ hat, so möche man natürlich berechnen
+wie sich der quantenmechanische Zustand von $M$ nach $N$ weiterentwickelt, also ein Morphismus von $Z(M)$ nach $Z(N)$. Die TQFTs leisten genau das, sie stellen also
+einen Funktor von der Kategorie der Kobordismen $\category{Cob}(n)$ in die Katergorie der Vektorräume $\category{Vekt}_k$ dar, in welchen die quantenmechanischen
+Zustände dargestellt werden.
+
+\begin{Def}
+  Eine topologische Quantenfeldtheorie ist ein (symmetrisch monoidaler) Funktor $Z: \category{Vekt}_k \rightarrow \category{Vekt}_k$ mit folgenden Daten:
+  \begin{itemize}
+    \item Für jede geschlossene $(n-1)$-dimensionale Mannigfaltigkeit ein Vektorraum $Z(M)$.
+    \item Für jeden orientierten Bordismus $B$ von $M$ nach $N$ eine lineare Abbildung von Vektorräumen: $Z(B): Z(M) \rightarrow Z(N)$
+    \item eine Menge von Isomorphismen $Z(\empty) \cong k$, $Z(M\sqcup N) \cong Z(M) \otimes Z(N)$.
+  \end{itemize}
+\end{Def}
 
 
